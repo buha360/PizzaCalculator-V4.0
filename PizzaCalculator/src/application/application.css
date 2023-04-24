@@ -1,0 +1,53 @@
+.root {
+	-fx-background-color: #212327;
+	-fx-font-family: 'Poppins', sans-serif;
+}
+
+.label {
+	-fx-font-size: 32;
+}
+
+.navbar {
+    -fx-background-color: red;
+}
+
+.label:hover {
+	-fx-cursor: hand;
+}
+
+.line {
+	-fx-animated: true;
+}
+
+.text-field {
+	-fx-focus-color: #ff0000;
+	-fx-control-inner-background: #2a2f3b;
+	-fx-border-color: #ff0000;
+	-fx-border-radius: 3;
+	-fx-border-width: 1.3;
+	-fx-prompt-text-fill: #ff0000;
+}
+
+.button {
+	-fx-background-color: #00ff7b;
+	-fx-text-fill: #2a2f3b;
+}
+
+.scroll-bar .thumb {
+	-fx-background-color:#2a2f3b;
+}
+
+.scroll-bar:vertical > .increment-button,
+.scroll-bar:vertical > .decrement-button {
+    -fx-background-color: transparent;
+    -fx-shape: "";
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-effect: null;
+    -fx-scale-y: 0;
+    -fx-opacity: 0;
+    -fx-rotate: 180deg;
+    -fx-translate-x: -1000px;
+    -fx-translate-y: -1000px;
+}

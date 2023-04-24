@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<children>
+		<Label fx:id="napolyi" layoutX="65" layoutY="40" onMouseClicked="#switchToScene1" text="NÁPOLYI" />
+		<Label fx:id="romai" layoutX="65" layoutY="100" onMouseClicked="#switchToScene2" text="RÓMAI" />
+		<Label fx:id="segitseg" layoutX="65" layoutY="160" onMouseClicked="#switchToScene3" text="SEGÍTSÉG" />
+		<Label fx:id="fooldal" layoutX="65.0" layoutY="340" onMouseClicked="#switchToScene4" text="FŐOLDAL" />
+		<TextField fx:id="weight" alignment="CENTER" layoutX="593.0" layoutY="99.0" onKeyReleased="#getTextFieldInputWeight" prefHeight="35.0" prefWidth="190.0" promptText="280g - 450g">
+			<font>
+				<Font size="16.5" />
+			</font>
+		</TextField>
+		<TextField fx:id="hydration" alignment="CENTER" layoutX="593.0" layoutY="224.0" onKeyReleased="#getTextFieldInputHydration" prefHeight="35.0" prefWidth="190.0" promptText="60 - 70">
+			<font>
+				<Font size="16.5" />
+			</font>
+		</TextField>
+		<TextField fx:id="db" alignment="CENTER" layoutX="593.0" layoutY="339.0" onKeyReleased="#getTextFieldInputDB" prefHeight="35.0" prefWidth="190.0" promptText="darabszám &gt; 0">
+			<font>
+				<Font size="16.5" />
+			</font>
+		</TextField>
+		<Text fill="WHITE" layoutX="657.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SÚLY">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Text>
+		<Text fill="WHITE" layoutX="608.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HIDRATÁCIÓ">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Text>
+		<Text fill="WHITE" layoutX="607.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DARABSZÁM">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Text>
+		<Button fx:id="calculation_button" layoutX="640.0" layoutY="444.0" mnemonicParsing="false" onAction="#CalculatingButton" prefHeight="43.0" prefWidth="95.0" text="Számolás!" textAlignment="CENTER">
+			<font>
+				<Font size="16.5" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="ButtonX" layoutX="1032.0" layoutY="14.0" minWidth="29.0" mnemonicParsing="false" onAction="#EscapeButton" prefHeight="35.0" prefWidth="54.0" text="X">
+			<font>
+				<Font size="14.0" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+	</children>
+</AnchorPane>
