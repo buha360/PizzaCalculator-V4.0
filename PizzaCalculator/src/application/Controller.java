@@ -37,6 +37,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Text;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
@@ -206,7 +207,7 @@ public class Controller implements Initializable {
 		vbox.setStyle(
 				"-fx-font-size: 25px; -fx-background-color: #2a2f3b; -fx-border-color: #2a2f3b; -fx-border-width: 0 0 0 2; -fx-translate-x: 347px; -fx-translate-y: 60px");
 
-		Text label1 = new Text(" 1. Mérd ki precízen a nyersanyagokat!");
+		Text label1 = new Text(" 1. Mérd ki precízen a nyersanyagokat!                                      ");
 		Text label2 = new Text(" 2. Alaposan kavard össze az előtésztát!");
 		Text label3 = new Text(" 3. Sózd meg a tésztavizet!");
 		Text label4 = new Text(" 4. Add hozzá a lisztet és gyúrd össze a tésztát!");
@@ -425,8 +426,11 @@ public class Controller implements Initializable {
 			alert.setHeaderText(" Sajnos rossz értékeket adtál meg!\t\t");
 			alert.setContentText("Ha az érték helyes, akkor zöld lesz a mezője!");
 
-			alert.setX(860);
-			alert.setY(275);
+			Screen screen = Screen.getPrimary();
+			Rectangle2D bounds = screen.getVisualBounds();
+			
+			alert.setX((bounds.getWidth() / 2) - 100);
+			alert.setY((bounds.getHeight() / 2) - 243);
 
 			DialogPane dialogPane = alert.getDialogPane();
 			dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
@@ -448,8 +452,11 @@ public class Controller implements Initializable {
 					ingredients.salt(ingredients.getWeight(), ingredients.getHydration()), ingredients.getDb());
 
 			Alert alert = new Alert(AlertType.INFORMATION);
-			alert.setX(860);
-			alert.setY(185);
+			Screen screen = Screen.getPrimary();
+			Rectangle2D bounds = screen.getVisualBounds();
+			
+			alert.setX((bounds.getWidth() / 2) - 100);
+			alert.setY((bounds.getHeight() / 2) - 332);
 			alert.initStyle(StageStyle.TRANSPARENT);
 			alert.setTitle("Kiszámítás kész");
 			alert.setHeaderText(" Az értékek kiszámolásra kerültek!           ");
@@ -484,8 +491,11 @@ public class Controller implements Initializable {
 			alert.setHeaderText(" Sajnos rossz értékeket adtál meg!\t\t");
 			alert.setContentText("Ha az érték helyes, akkor zöld lesz a mezője!");
 
-			alert.setX(860);
-			alert.setY(275);
+			Screen screen = Screen.getPrimary();
+			Rectangle2D bounds = screen.getVisualBounds();
+
+			alert.setX((bounds.getWidth() / 2) - 100);
+			alert.setY((bounds.getHeight() / 2) - 243);
 
 			DialogPane dialogPane = alert.getDialogPane();
 			dialogPane.getStylesheets().add(getClass().getResource("myDialogs.css").toExternalForm());
@@ -509,8 +519,11 @@ public class Controller implements Initializable {
 					ingredients.salt(ingredients.getWeight(), ingredients.getHydration()));
 
 			Alert alert = new Alert(AlertType.INFORMATION);
-			alert.setX(860);
-			alert.setY(185);
+			Screen screen = Screen.getPrimary();
+			Rectangle2D bounds = screen.getVisualBounds();
+			
+			alert.setX((bounds.getWidth() / 2) - 100);
+			alert.setY((bounds.getHeight() / 2) - 322);
 			alert.initStyle(StageStyle.TRANSPARENT);
 			alert.setTitle("Kiszámítás kész");
 			alert.setHeaderText(" Az értékek kiszámolásra kerültek!            ");
