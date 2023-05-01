@@ -3,7 +3,6 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -13,7 +12,6 @@
       <Label fx:id="romai" layoutX="65" layoutY="100" onMouseClicked="#switchToScene2" text="RÓMAI" />
       <Label fx:id="segitseg" layoutX="65" layoutY="160" onMouseClicked="#switchToScene3" text="SEGÍTSÉG" />
       <Label fx:id="fooldal" layoutX="65.0" layoutY="340" onMouseClicked="#switchToScene4" text="FŐOLDAL" />
-      <ScrollPane fx:id="segitseg_scroll" layoutX="347.0" layoutY="60.0" prefHeight="541.0" prefWidth="685.0" />
       <Button fx:id="ButtonX" layoutX="1032.0" layoutY="14.0" minWidth="29.0" mnemonicParsing="false" onAction="#EscapeButton" prefHeight="35.0" prefWidth="54.0" text="X">
          <font>
             <Font size="14.0" />
@@ -22,5 +20,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Label fx:id="vito" layoutX="415.0" layoutY="41.0" text="VITO IACOPELLI" />
+      <Label fx:id="malati" layoutX="713.0" layoutY="40.0" text="MALATI DI PIZZA" />
    </children>
 </AnchorPane>

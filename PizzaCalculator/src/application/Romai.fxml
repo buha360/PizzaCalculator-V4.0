@@ -27,7 +27,7 @@
          <font>
             <Font size="16.5" />
          </font></TextField>
-      <TextField fx:id="thickness" alignment="CENTER" layoutX="396.0" layoutY="281.0" onKeyReleased="#getTextFieldInputThickness" prefHeight="35.0" prefWidth="190.0" promptText="150 - 200">
+      <TextField fx:id="thickness" alignment="CENTER" layoutX="396.0" layoutY="281.0" onKeyReleased="#getTextFieldInputThickness" prefHeight="35.0" prefWidth="190.0" promptText="150 - 250">
          <font>
             <Font size="16.5" />
          </font></TextField>
@@ -50,7 +50,7 @@
             <Font size="28.0" />
          </font>
       </Text>
-      <Button layoutX="640.0" layoutY="444.0" mnemonicParsing="false" onAction="#CalculatingButtonRomai" prefHeight="43.0" prefWidth="95.0" text="Számolás!">
+      <Button layoutX="636.0" layoutY="444.0" mnemonicParsing="false" onAction="#CalculatingButtonRomai" prefHeight="50.0" prefWidth="105.0" text="Számolás!">
          <font>
             <Font size="16.5" />
          </font>

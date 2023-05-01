@@ -9,12 +9,12 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application {
-
+	
 	@Override
 	public void start(Stage stage) {
 		try {
+			// Emiatt nem szemcsés a wd_logo bal alul
 			System.setProperty("prism.lcdtext", "false");
-
 			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(root); // 1100, 660
 			Image icon = new Image("PizzaCalculator_image.png");

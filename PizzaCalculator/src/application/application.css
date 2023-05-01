@@ -40,14 +40,7 @@
 .scroll-bar:vertical > .increment-button,
 .scroll-bar:vertical > .decrement-button {
     -fx-background-color: transparent;
-    -fx-shape: "";
-    -fx-padding: 0;
-    -fx-background-insets: 0;
-    -fx-background-radius: 0;
-    -fx-effect: null;
-    -fx-scale-y: 0;
-    -fx-opacity: 0;
-    -fx-rotate: 180deg;
+    -fx-padding: 0.5;
     -fx-translate-x: -1000px;
     -fx-translate-y: -1000px;
 }
